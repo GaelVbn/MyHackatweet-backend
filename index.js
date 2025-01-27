@@ -10,7 +10,12 @@ var tweetsRouter = require("./routes/tweets");
 var app = express();
 
 const cors = require("cors");
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://my-hackatweet-frontend.vercel.app",
+    credentials: true,
+  })
+);
 
 app.use(logger("dev"));
 app.use(express.json());
