@@ -1,0 +1,11 @@
+/users
+
+signup : http://localhost:3001/users/signup
+
+signin : http://localhost:3001/users/signin
+
+/homePage
+
+postTweet : http://localhost:3001/tweets
+
+deleteTweet : http://localhost:3001/tweets
